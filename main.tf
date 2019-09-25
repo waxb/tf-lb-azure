@@ -7,12 +7,6 @@ resource "azurerm_lb" "load_balancer" {
     name                          = "loadbalancerFE"
     public_ip_address_id          = var.pip_id
   }
-
-  tags = {
-    CostCenter       = var.cost
-    assessment-group = var.assessment_group
-    Owner            = var.owner
-  }
 }
 
 resource "azurerm_lb_backend_address_pool" "backend_pool" {
