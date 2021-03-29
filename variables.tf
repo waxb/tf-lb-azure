@@ -7,10 +7,6 @@ variable "rg_name" {
   description = "The name of resource group where the resources are deployed"
 }
 
-variable "subnet_id" {
-  description = "Full path/ID of subnet[N] to attach NICs"
-}
-
 variable "pip_id" {
   description = "PIP of frontend"
 }
